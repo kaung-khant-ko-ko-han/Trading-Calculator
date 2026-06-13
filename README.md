@@ -23,8 +23,16 @@ Rich ကို ထည့်သွင်းပြီးမှ script ကို ru
 Forex Trading Dashboard - All-in-One Calculator with Rich Terminal UI
 Fixed: Group renderables for margin panel
 """
+အမှားက `create_margin_level_panel` function ထဲမှာ `Align.center(table) + warnings` ဆိုတဲ့ ပေါင်းလိုက်တဲ့အတွက် `TypeError` ပြသွားတာပါ။ Rich က `Align` object ကို string နဲ့ တိုက်ရိုက်ပေါင်းလို့မရပါဘူး။
 
-'''
+ဒီအတွက် `rich.console.Group` ကိုသုံးပြီး table ရော warning စာသားကိုပါ အတူတူထည့်ပေးရပါမယ်။ အောက်မှာ **ပြင်ဆင်ပြီးသား full script** ကို ဖော်ပြထားပါတယ်။
+
+```python
+#!/usr/bin/env python3
+"""
+Forex Trading Dashboard - All-in-One Calculator with Rich Terminal UI
+Fixed: Group renderables for margin panel
+"""
 
 import sys
 from math import floor
@@ -282,9 +290,7 @@ if __name__ == "__main__":
     except KeyboardInterrupt:
         print("\n✅ Dashboard closed. Happy Trading!")
         sys.exit(0)
-        
-'''
-
+```
 ---
 
 ## 🚀 How to Run
