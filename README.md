@@ -23,6 +23,7 @@ Rich ကို ထည့်သွင်းပြီးမှ script ကို ru
 Forex Trading Dashboard - All-in-One Calculator with Rich Terminal UI
 Fixed: Group renderables for margin panel
 """
+
 ---
 
 ```python
