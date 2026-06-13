@@ -23,7 +23,9 @@ Rich ကို ထည့်သွင်းပြီးမှ script ကို ru
 Forex Trading Dashboard - All-in-One Calculator with Rich Terminal UI
 Fixed: Group renderables for margin panel
 """
+
 '''
+
 import sys
 from math import floor
 from rich.console import Console, Group
@@ -280,6 +282,7 @@ if __name__ == "__main__":
     except KeyboardInterrupt:
         print("\n✅ Dashboard closed. Happy Trading!")
         sys.exit(0)
+        
 '''
 
 ---
